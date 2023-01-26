@@ -20,11 +20,11 @@ Wireguard
   - tee wg.conf <<EOF
   [Interface]
   ListenPort = 37499
-  PrivateKey = <privatekey>
+  PrivateKey = --privatekey--
   Address = 10.10.0.1/24
 
   [Peer]
-  PublicKey = <publickey>
+  PublicKey = --publickey--
   AllowedIPs = 10.10.0.2/32
   Endpoint = 10.0.0.122:52006
   EOF
